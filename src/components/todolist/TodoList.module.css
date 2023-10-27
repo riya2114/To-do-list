@@ -1,0 +1,167 @@
+.heading{
+    margin-top: 3em;
+    font-size: 1.5em;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    margin-top: 2em;
+}
+.list{
+    display: flex;
+    gap: 1.5em;
+    padding: 2em 3em;
+    justify-content: center;
+}
+.title{
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.title input{
+    width: 18em;
+    height: 2em;
+    border: none;
+}
+.title input:focus{
+    outline: 2px solid var(--button-background-color);
+}
+input::placeholder{
+    padding: 1em;
+    font-size: 1em;
+}
+.add_button{
+    margin-top: 1em;
+}
+.add_button button{
+    width: 5em;
+    height: 3em;
+    background-color: var(--button-background-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+}
+.add_button button:hover{
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--button-background-color);
+}
+.button{
+    text-align: center;
+    margin-bottom: 1.1em;
+}
+.list_item{
+    background-color: var(--list-item-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1.5em;
+}
+.item{
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 0.01em solid var(--border-bottom-color);
+}
+.item h3{
+    font-size: 1.5em;
+    color: var(--button-background-color);
+}
+.item p{
+    font-size: 0.7em;
+    color: rgb(149, 141, 141);
+}
+.icon{
+    cursor: pointer;
+    color: var(--text-color); 
+}
+.check{
+    color: var(--button-background-color);
+    cursor: pointer;
+}
+.item_icons{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.text_item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+@media(max-width:768px){
+    .container{
+        width: 550px;
+    }
+    .title input{
+        width: 200px;
+        height: 20px;
+    }
+    input::placeholder{
+        font-size: 11px
+    }
+    .add_button button{
+        width: 45px;
+        height: 30px
+    }
+    .item h3{
+        font-size: 15px;
+    }
+}
+@media(max-width:620px){
+    .container{
+        width: 450px;
+    }
+    .title input{
+        width: 150px;
+    }
+    input::placeholder{
+        font-size: 9px
+    }
+}
+@media(max-width:480px){
+    .container{
+        width: 320px;
+    }
+    .heading{
+        font-size: 15px;
+        margin-top: 9px;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .item h3{
+        font-size: 10px;
+    }
+    .item_icons{
+        gap: 5px;
+    }
+}
+@media(max-width: 340px){
+    .container{
+        width: 280px;
+    }
+    .item h3{
+        font-size: 10px;
+    }
+    .item p{
+        font-size: 8px;
+    }
+    .item_icons{
+        gap: 2px;
+    }
+    .item{
+       gap: 20px;
+    }
+}
+@media(max-width: 290px){
+    .container{
+        width: 200px;
+    }
+}

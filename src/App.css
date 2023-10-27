@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+:root{
+  --background-color: rgba(31, 31, 37, 0.912);
+  --text-color: #fff;
+  --button-background-color: #f10346;
+  --list-item-color: rgb(18, 16, 16);
+  --border-bottom-color: rgb(38, 35, 35);
+}
+.todo{
+  width: 5.5em;
+  height: 2.8em;
+  background-color: var(--text-color);
+  border: none;
+}
+.active{
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+}
+@media(max-width:768px){
+  .todo{
+      width: 55px;
+      font-size: 11px;
+  }
+}
